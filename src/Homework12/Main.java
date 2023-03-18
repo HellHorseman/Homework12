@@ -13,5 +13,10 @@ public class Main {
         Author zahn = new Author("Тимоти", "Зан");
         Book theBlackCollar = new Book("Чёрный Спецназ", zahn, 1983);
         System.out.println(theBlackCollar);
+        Book theBlackCollar1 = new Book("Чёрный Спецназ", zahn, 1983);
+        System.out.println(theBlackCollar1.equals(theBlackCollar));
+        System.out.println(theBlackCollar1.equals(theOdorOfThought));
+        System.out.println(theBlackCollar.hashCode());
     }
+
 }
