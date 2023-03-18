@@ -4,14 +4,14 @@ public class Main {
     public static void main(String[] args) {
         Author garrison = new Author("Гарри", "Гаррисон");
         Book deathWorld = new Book("Мир Смерти", garrison, 1960);
-        System.out.println(deathWorld.getBookName() + ", " + garrison.getName() + " " + garrison.getSurname() + ", " + deathWorld.getPublishYear());
+        System.out.println(deathWorld);
         Author sheckley = new Author("Роберт", "Шекли");
         Book theOdorOfThought = new Book("Запах Мысли", sheckley, 1953);
-        System.out.println(theOdorOfThought.getBookName() + ", " + sheckley.getName() + " " + sheckley.getSurname() + ", " + theOdorOfThought.getPublishYear());
+        System.out.println(theOdorOfThought);
         theOdorOfThought.setPublishYear(1955);
-        System.out.println(theOdorOfThought.getBookName() + ", " + sheckley.getName() + " " + sheckley.getSurname() + ", " + theOdorOfThought.getPublishYear());
+        System.out.println(theOdorOfThought);
         Author zahn = new Author("Тимоти", "Зан");
         Book theBlackCollar = new Book("Чёрный Спецназ", zahn, 1983);
-        System.out.println(theBlackCollar.getBookName() + ", " + zahn.getName() + " " + zahn.getSurname() + ", " + theBlackCollar.getPublishYear());
+        System.out.println(theBlackCollar);
     }
 }
